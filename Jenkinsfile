@@ -1,13 +1,6 @@
 pipeline {
   agent any
 
-  stages {
-    stage('Checkout') {
-      steps {
-        git 'https://github.com/Swami95/jenkins-test'
-      }
-    }
-
     stage('Build') {
       steps {
         echo "Build Success"  // Replace with your actual build command

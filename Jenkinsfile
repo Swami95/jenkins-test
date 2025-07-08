@@ -16,7 +16,7 @@ pipeline {
 
     stage('Test') {
       steps {
-        echo "Test Success   // Replace with your test command
+        echo "Test Success"   // Replace with your test command
       }
     }
   }

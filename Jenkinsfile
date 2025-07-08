@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+        docker {
+      image 'python:3.9'
+      args '-u'   // unbuffered output, optional
+    }
+  }
 
   stages {
 

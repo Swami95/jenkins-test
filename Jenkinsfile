@@ -1,17 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image 'python:3.9'
-      args '-u'  // unbuffered output, optional
-    }
-  }
-
-  stages {
-    stage('Checkout') {
-      steps {
-        checkout scm
-      }
-    }
+  agent any
 
     stage('Setup') {
       steps {
